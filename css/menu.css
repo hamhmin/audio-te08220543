@@ -1,0 +1,191 @@
+/*gnb 메뉴창 css 코드*/
+
+#gnb.on {
+  transform: translateY(0%);
+}
+
+
+#gnb{
+ width: 100%;
+ height: 100vh;
+ background-color: var(--main-color2);
+position:fixed;
+    top: 0;
+  transform: translateY(-100%);
+  transition-duration: 0.4s;
+  z-index: 999;
+    overflow: scroll;
+  }
+  #gnb .search{
+    margin-top: 53px;
+    width: 100%;
+    position: relative;
+  }
+  #gnb .search img{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+  }
+  #gnb .search input{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background: #eee;
+    font-size: 12px;
+    padding-left: 35px;
+  }
+  #gnb #my {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #gnb #my a{
+    display: flex;
+    border-right : 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #gnb #my a:last-child{
+    border-right: 0;
+  }
+  #gnb #my img{
+    margin-right: 6px;
+  }
+  #gnb nav{
+    width: 100%;
+    margin-top: 20px;
+  }
+  #gnb nav ul{
+    width: 100%;
+    border-top: 1px solid #999;
+    background: #eee;
+  }
+  #gnb nav ul .main-list{
+    background: #fff;
+    width: 100%;
+    line-height: 37px;
+    font-size: 12px;
+    text-align: left;
+    border-bottom: 1px solid #999;
+    position: relative;
+  }
+#gnb nav ul .main-list img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 37px;
+}
+#gnb nav ul .main-list > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+}
+#gnb nav ul .main-list ul{
+    display: none;
+    width: 100%;
+    text-align: left;
+  }
+  #gnb nav ul .main-list ul li{
+    border-top: 1px solid #fff;
+    padding-left: 55px;
+    line-height: 37px;
+    width: 100%;
+    height: 37px;
+  }
+
+
+
+#gnb > header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 53px;
+  background: var(--main-color2);
+  padding: 20px;
+  z-index: 10;
+}
+#gnb > header .back {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+#gnb > header .remove-back {
+    display: none;
+}
+#gnb > header .empty{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+#gnb > header .gnb-btn {
+  width: 15px;
+  height: 15px;
+}
+
+#gnb > header #logo .text-logo {
+  height: 17px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation-name: textLogo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes textLogo {
+    0% {
+        opacity: 0;
+    }
+    5%{
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+#gnb > header #logo .symbol-logo {
+  display: block;
+  margin-top: 1px;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  animation-name: symbolLogo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes symbolLogo {
+    0% {
+        opacity: 0;
+    }
+    45% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    95%{
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}

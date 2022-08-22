@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <!— 사이트 소개글 —> -->
+    <meta name="description" content="오디오테크니카 모바일 웹사이트입니다." />
+    <!-- <!— 검색 키워드 —> -->
+    <meta name="keywords" content="오디오테크니카" />
+    <!-- <!— 작성자 —> -->
+    <meta name="author" content="ham hyungmin" />
+    <!-- <!— SNS 공유 정보 -OG(open graph)-->
+    <!-- <!— 사이트명(title) —> -->
+    <meta name="og:site_name" content="함형민의 포트폴리오" />
+    <!-- 웹사이트 대표 이미지(썸네일) -->
+    <meta name="og:image" content="site_thumbnail.jpg" />
+
+    <!-- 아이콘 등록 -->
+    <link rel="shortcut icon" href="app-icon.png">
+    <title>로그인 창</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body id="login">
+
+  <header>
+    <button onclick="history.back()">
+      <img class="back" src="images/back.png" alt="뒤로가기"
+    />
+    </button>
+    <a id="logo" href="index.html" alt="home">
+      <img src="images/text-logo.png" alt="logo" class="text-logo" />
+
+      <img src="images/symbol-logo.png" alt="logo" class="symbol-logo" />
+    </a>
+    <button class="gnb-btn">
+      <img src="images/gnb-btn.png" alt="메뉴"
+    />
+  </button>
+
+  </header>
+<!--header------->
+
+    <main id="gnb">
+      <header>
+        <button onclick="history.back()">
+          <img class="remove-back" src="images/back.png" alt="뒤로가기"
+        />
+        <span class="empty"></span>
+        </button>
+        <a id="logo" href="./" alt="home">
+          <img src="images/text-logo.png" alt="logo" class="text-logo" />
+
+          <img src="images/symbol-logo.png" alt="logo" class="symbol-logo" />
+        </a>
+        <button class="gnb-btn-close">
+          <img src="images/gnb-btn-close.png" alt="메뉴"
+        />
+      </button>
+    </header>
+
+      <div class="search">
+        <img src="images/search.png" alt="search">
+        <input type="text" placeholder="audio-technica 검색">
+      </div>
+      <section id="my">
+        <a href="login.html"><img src="images/login.png" alt="login">LOGIN</a>
+        <a href="./"><img src="images/cart.png" alt="login">CART</a>
+        <a href="./"><img src="images/like.png" alt="login">찜한상품</a>
+      </section>
+
+      <nav>
+        <ul>
+            <li class="main-list"><a href="./products.html">이어폰</a><img src="images/plus.png" alt="plus">
+                <ul>
+                    <a href="./products.html?category=유선이어폰"><li>유선 이어폰</li></a>
+                    <a href="./products.html?category=무선이어폰"><li>무선 이어폰</li></a>
+                    <a href="./"><li>노이즈 캔슬링</li></a>
+                    <a href="./"><li>하이레졸루션</li></a>
+                </ul>
+            </li>
+            <li class="main-list"><a href="./products.html">헤드폰</a><img src="images/plus.png" alt="plus">
+                <ul>
+                    <a href="./products.html?category=유선헤드폰"><li>유선 헤드폰</li></a>
+                    <a href="./products.html?category=무선헤드폰"><li>무선 헤드폰</li></a>
+                    <a href="./"><li>모니터링</li></a>
+                    <a href="./"><li>게이밍 헤드셋</li></a>
+                    <a href="./"><li>프리미엄</li></a>
+                </ul>
+            </li>
+            <li class="main-list"><a href="./products.html">턴테이블/스피커</a><img src="images/plus.png" alt="plus">
+                <ul>
+                    <a href="./products.html?category=턴테이블"><li>턴테이블</li></a>
+                    <a href="./products.html?category=스피커"><li>스피커</li></a>
+                </ul>
+            </li>
+            <li class="main-list"><a href="./products.html?category=마이크">마이크</a></li>
+            <li class="main-list"><a href="./">고객지원</a><img src="images/plus.png" alt="plus">
+                <ul>
+                    <a href="./"><li>고객센터</li></a>
+                    <a href="./"><li>무통장입금</li></a>
+                    <a href="./"><li>배송조회</li></a>
+                    <a href="./"><li>소셜미디어</li></a>
+                </ul>
+            </li>
+            <li class="main-list"><a href="./about.html">회사소개</a></li>
+        </ul>
+      </nav>
+    </main>
+  
+ <!-- gnb---- -->
+
+ <main>
+  <!-- <div class="line"></div> -->
+  <div class="log-in">
+  <h1>로그인</h1>
+  </div>
+  <div class="textbox">
+  <div class="text">
+      <input type="text" placeholder="아이디를 입력해 주세요.">
+  </div>
+  <div class="password">
+      <input type="text" placeholder="비밀번호를 입력해 주세요.">
+  </div>
+</div>
+  <div class="check-box">
+      <form>
+          <input type="checkbox" id="cb1">
+          <label for="cb1"></label>
+          <span>아이디 저장</span>
+      </form>
+      <form>
+          <input type="checkbox" id="cb2">
+          <label for="cb2"></label>
+          <span>자동 로그인</span>
+      </form>
+</div>
+<div class="logbox">
+  <div class="log">
+      <p>로그인하기</p>
+  </div>
+  <div class="order">
+      <p>비회원 주문</p>
+  </div>
+  </div>
+  <div class="info">
+  <ul>
+    <li>아이디 찾기</li>
+    <li>비밀번호 찾기</li>
+    <li class="sign">회원가입</li>
+  </ul>
+</div>
+  <ul class="sns-list">
+    <li>
+      <img src="images/facebook.png" alt="페이스북"> <p>페이스북</p>
+    </li>
+    <li>
+      <img src="images/apple.png" alt="애플"><p>애플</p>
+    </li>
+    <li>
+      <img src="images/naver.png" alt="네이버"> <p>네이버</p>
+    </li>
+    <li>
+      <img src="images/kakao.png" alt="카카오"><p>카카오톡</p>
+    </li>
+   </ul>
+</main>
+</body>
+</html>

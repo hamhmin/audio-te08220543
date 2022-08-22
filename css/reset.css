@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+  button {
+    border-style: none;
+    background-color: inherit;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  body {
+      font-size: 100%;
+      font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+  }
+  :root {
+    --main-color1: #333;
+    --main-color2: #fff;
+    --sub-color1: #666;
+    --sub-color2: #999;
+    --sub-color3: #ccc;
+    --sub-color4: #eee;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+  }

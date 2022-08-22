@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <!— 사이트 소개글 —> -->
+    <meta name="description" content="오디오테크니카 모바일 웹사이트입니다." />
+    <!-- <!— 검색 키워드 —> -->
+    <meta name="keywords" content="오디오테크니카" />
+    <!-- <!— 작성자 —> -->
+    <meta name="author" content="ham hyungmin" />
+    <!-- <!— SNS 공유 정보 -OG(open graph)-->
+    <!-- <!— 사이트명(title) —> -->
+    <meta name="og:site_name" content="함형민의 포트폴리오" />
+    <!-- 웹사이트 대표 이미지(썸네일) -->
+    <meta name="og:image" content="site_thumbnail.jpg" />
+
+    <!-- 아이콘 등록 -->
+    <link rel="shortcut icon" href="app-icon.png">
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/detail.js"></script>
+
+</head>
+
+<body id="products-detail">
+
+  <!------- 헤더 ------->
+  <header>
+
+    <button onclick="history.back()">
+      <img class="back" src="images/back.png" alt="뒤로가기" />
+    </button>
+
+    <a id="logo" href="index.html" alt="home">
+      <img src="images/text-logo.png" alt="logo" class="text-logo" />
+      <img src="images/symbol-logo.png" alt="logo" class="symbol-logo" />
+    </a>
+
+    <button class="gnb-btn">
+      <img src="images/gnb-btn.png" alt="메뉴" />
+    </button>
+
+  </header>
+
+
+  <!------- GNB 파트 ------->
+  <main id="gnb">
+
+    <!------- 상단 헤더 ------->
+    <header>
+
+      <button onclick="history.back()">
+        <img class="back" src="images/back.png" alt="뒤로가기" />
+      </button>
+
+      <a id="logo" href="./" alt="home">
+        <img src="images/text-logo.png" alt="logo" class="text-logo" />
+        <img src="images/symbol-logo.png" alt="logo" class="symbol-logo" />
+      </a>
+
+      <button class="gnb-btn-close">
+        <img src="images/gnb-btn-close.png" alt="메뉴" />
+      </button>
+
+    </header>
+
+    <!------- 상단 검색 ------->
+    <div class="search">
+      <img src="images/search.png" alt="search">
+      <input type="text" placeholder="audio-technica 검색">
+    </div>
+
+    <!------- 개인 정보등------->
+    <section id="my">
+      <a href="login.html"><img src="images/login.png" alt="login">LOGIN</a>
+      <a href="./"><img src="images/cart.png" alt="login">CART</a>
+      <a href="./"><img src="images/like.png" alt="login">찜한상품</a>
+    </section>
+
+    <!------- GNB 메뉴 ------->
+    <nav>
+
+      <ul>
+
+        <!------- 이어폰 파트 ------->
+        <li class="main-list"><a href="./products.html?mainGroup=이어폰">이어폰</a><img src="images/plus.png" alt="plus">
+          <ul>
+            <a href="./products.html?category=유선이어폰">
+              <li>유선 이어폰</li>
+            </a>
+            <a href="./products.html?category=무선이어폰">
+              <li>무선 이어폰</li>
+            </a>
+            <a href="./products.html?category=유선이어폰">
+              <li>노이즈 캔슬링</li>
+            </a>
+            <a href="./products.html?category=유선이어폰">
+              <li>하이레졸루션</li>
+            </a>
+          </ul>
+        </li>
+
+        <!------- 헤드폰 파트 ------->
+        <li class="main-list"><a href="./products.html">헤드폰</a><img src="images/plus.png" alt="plus">
+          <ul>
+            <a href="./products.html?category=유선헤드폰">
+              <li>유선 헤드폰</li>
+            </a>
+            <a href="./products.html?category=무선헤드폰">
+              <li>무선 헤드폰</li>
+            </a>
+            <a href="./products.html?category=무선헤드폰">
+              <li>모니터링</li>
+            </a>
+            <a href="./products.html?category=무선헤드폰">
+              <li>게이밍 헤드셋</li>
+            </a>
+            <a href="./products.html?category=무선헤드폰">
+              <li>프리미엄</li>
+            </a>
+          </ul>
+        </li>
+
+        <!------- 턴테이블/스피커 파트 ------->
+        <li class="main-list"><a href="./products.html?category=턴테이블">턴테이블/스피커</a><img src="images/plus.png" alt="plus">
+          <ul>
+            <a href="./products.html?category=턴테이블">
+              <li>턴테이블</li>
+            </a>
+            <a href="./products.html?category=스피커">
+              <li>스피커</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="main-list"><a href="./products.html?category=마이크">마이크</a></li>
+
+        <!------- 고객지원 파트 ------->
+        <li class="main-list"><a href="./">고객지원</a><img src="images/plus.png" alt="plus">
+          <ul>
+            <a href="./">
+              <li>고객센터</li>
+            </a>
+            <a href="./">
+              <li>무통장입금</li>
+            </a>
+            <a href="./">
+              <li>배송조회</li>
+            </a>
+            <a href="./">
+              <li>소셜미디어</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="main-list"><a href="./about.html">회사소개</a></li>
+
+      </ul>
+
+    </nav>
+
+  </main>
+
+
+  <main id="detail1">
+
+    <!-- <div class="quantity">
+      <span class="minus">-</span>
+      <span class="num">1</span>
+      <span class="plus">+</span>
+    </div> -->
+
+  </main>
+
+  <!-- <script>
+    const plus = document.querySelector(".plus"),
+      minus = document.querySelector(".minus"),
+      num = document.querySelector(".num");
+
+    let a = 1;
+    plus.addEventListener("click", () => {
+      a++;
+      a = (a < 10) ? + a : a;
+      num.innerText = a;
+      console.log(a);
+    });
+    minus.addEventListener("click", () => {
+      if (a > 1) {
+        a--;
+        a = (a > 1) ? + a : a;
+        num.innerText = a;
+        console.log(a);
+      }
+
+    });
+  </script> -->
+
+</body>
+
+</html>

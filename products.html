@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <!— 사이트 소개글 —> -->
+    <meta name="description" content="오디오테크니카 모바일 웹사이트입니다." />
+    <!-- <!— 검색 키워드 —> -->
+    <meta name="keywords" content="오디오테크니카" />
+    <!-- <!— 작성자 —> -->
+    <meta name="author" content="ham hyungmin" />
+    <!-- <!— SNS 공유 정보 -OG(open graph)-->
+    <!-- <!— 사이트명(title) —> -->
+    <meta name="og:site_name" content="함형민의 포트폴리오" />
+    <!-- 웹사이트 대표 이미지(썸네일) -->
+    <meta name="og:image" content="site_thumbnail.jpg" />
+
+    <!-- 아이콘 등록 -->
+    <link rel="shortcut icon" href="app-icon.png">
+  <title>audio-technica Products(Gallery View)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- 제품 불러오는 코드 -->
+
+</head>
+
+<body id="products">
+  <a href="./detail/detail.html?id=${i}"></a>
+
+  <header>
+    <button onclick="history.back()">
+      <img class="back" src="images/back.png" alt="뒤로가기"
+    />
+    </button>
+    <a id="logo" href="./" alt="home">
+      <img src="images/text-logo.png" alt="logo" class="text-logo" />
+
+      <img src="images/symbol-logo.png" alt="logo" class="symbol-logo" />
+    </a>
+    <button class="gnb-btn">
+      <img src="images/gnb-btn.png" alt="메뉴"
+    />
+  </button>
+
+  </header>
+<!--header------->
+
+<div id="gnb">
+  <header>
+    <button onclick="history.back()">
+      <img class="remove-back" src="images/back.png" alt="뒤로가기"
+    />
+    <span class="empty"></span>
+    </button>
+    <a id="logo" href="./" alt="home">
+      <img src="images/text-logo.png" alt="logo" class="text-logo" />
+
+      <img src="images/symbol-logo.png" alt="logo" class="symbol-logo" />
+    </a>
+    <button class="gnb-btn-close">
+      <img src="images/gnb-btn-close.png" alt="메뉴"
+    />
+  </button>
+</header>
+
+  <div class="search">
+    <img src="images/search.png" alt="search">
+    <input type="text" placeholder="audio-technica 검색">
+  </div>
+  <section id="my">
+    <a href="login.html"><img src="images/login.png" alt="login">LOGIN</a>
+    <a href="./"><img src="images/cart.png" alt="login">CART</a>
+    <a href="./"><img src="images/like.png" alt="login">찜한상품</a>
+  </section>
+
+  <nav>
+    <ul>
+        <li class="main-list"><a href="./products.html?mainGroup=이어폰">이어폰</a><img src="images/plus.png" alt="plus">
+            <ul>
+                <a href="./products.html?category=유선이어폰"><li>유선 이어폰</li></a>
+                <a href="./products.html?category=무선이어폰"><li>무선 이어폰</li></a>
+                <a href="./products.html?category=유선이어폰"><li>노이즈 캔슬링</li></a>
+                <a href="./products.html?category=유선이어폰"><li>하이레졸루션</li></a>
+            </ul>
+        </li>
+        <li class="main-list"><a href="./products.html">헤드폰</a><img src="images/plus.png" alt="plus">
+            <ul>
+                <a href="./products.html?category=유선헤드폰"><li>유선 헤드폰</li></a>
+                <a href="./products.html?category=무선헤드폰"><li>무선 헤드폰</li></a>
+                <a href="./products.html?category=무선헤드폰"><li>모니터링</li></a>
+                <a href="./products.html?category=무선헤드폰"><li>게이밍 헤드셋</li></a>
+                <a href="./products.html?category=무선헤드폰"><li>프리미엄</li></a>
+            </ul>
+        </li>
+        <li class="main-list"><a href="./products.html?category=턴테이블">턴테이블/스피커</a><img src="images/plus.png" alt="plus">
+            <ul>
+                <a href="./products.html?category=턴테이블"><li>턴테이블</li></a>
+                <a href="./products.html?category=스피커"><li>스피커</li></a>
+            </ul>
+        </li>
+        <li class="main-list"><a href="./products.html?category=마이크">마이크</a></li>
+        <li class="main-list"><a href="./">고객지원</a><img src="images/plus.png" alt="plus">
+            <ul>
+                <a href="./"><li>고객센터</li></a>
+                <a href="./"><li>무통장입금</li></a>
+                <a href="./"><li>배송조회</li></a>
+                <a href="./"><li>소셜미디어</li></a>
+            </ul>
+        </li>
+        <li class="main-list"><a href="./about.html">회사소개</a></li>
+    </ul>
+  </nav>
+</div>
+<main>
+  <section class="banner">
+      <img src="./images/a1.png" alt="배너">
+  </section>
+  <nav class="category">
+      <ul class="main-menu">
+        <li class="sub-menu on" id="all">
+          전체
+        </li>
+        <li id="h-all">헤드폰
+          <ul class="sub-menu">
+            <li id="wlh">무선헤드폰</li>
+            <li id="wh">유선헤드폰</li>
+          </ul>
+        </li>
+        <li id="e-all">이어폰
+          <ul class="sub-menu">
+            <li id="wle">무선이어폰</li>
+            <li id="we">유선이어폰</li>
+          </ul>
+        </li>
+        <li id="ts-all">턴테이블/스피커
+          <ul class="sub-menu">
+            <li id="tur">턴테이블</li>
+            <li id="spe">스피커</li>
+          </ul>
+        </li>
+        <li class="sub-menu" id="mic">
+          마이크
+        </li>
+      </ul>
+      <div class="filter">
+        <div class="row-filter">
+          <img src="./images/row-filter.png" alt="row-filter">
+        </div>
+        <div class="col-filter">
+          <img src="./images/col-filter.png" alt="col-filter">
+        </div>
+      </div>
+  </nav>
+
+<section class="row-item item">
+  <article class="wlh">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>1</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+  <article class="wh">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>2</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+  <article class="wle">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>3</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+  <article class="we">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>4</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+  <article class="tur">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>5</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+  <article class="spe">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>6</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+  <article class="mic">
+    <img src="./images/AT images/03-1Hw-1 ATH-M50xBT2.jpg" alt="상품">
+    <div class="item-text">
+    <h3>7</h3>
+    <h4>가격</h4>
+    <p>설명</p>
+  </div>
+  </article>
+</section>
+
+
+</main>
+
+
+<footer>
+  <ul class="footer-gnb">
+    <li class="footer-nav">
+      <a href="./">HOME</a>
+    </li>
+    <li class="footer-nav">
+      <a href="about.html">BRAND STORY</a>
+    </li>
+    <li class="footer-nav">
+      <a href="./">AGREEMENT</a>
+    </li>
+    <li class="footer-nav">
+      <a href="./">PRIVACY POLICY</a>
+    </li>
+    <li class="footer-nav">
+      <a href="./">GUIDE</a>
+    </li>
+  </ul>
+  <nav class="sns">
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-facebook"></i>
+  </nav>
+  <div class="info">
+    <article>
+      <h2>무통장입금</h2>
+      <div class="contents">
+      <p>
+        <span>기업은행 148-086543-01-014<br>예금주 : (주)세기AT</span><br>
+      </p>
+      <form>
+        <select name="bank">
+          <option value="">인터넷뱅킹바로가기</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          </optgroup>
+        </select>
+      </form>
+    </div>
+    </article>
+    <article>
+      <h2>배송조회</h2>
+      <p>로젠택배 1588-9988</p>
+    </article>
+    <article class="cs">
+     <a href="tel:02-3789-9803"><h3>CS : 02-3789-9803</h3></a> 
+      <p>(04629) 서울특별시 중구 소파로 127 (남산동 2가 23) 세기빌딩 1층 오디오테크니카 서비스 센터 / 
+        월-금 오전 10시 ~ 오후 6시 / 점심시간 오후 12시 30분 ~ 1시 30분 토요일, 일요일, 공휴일 휴무
+      </p>
+    </article>
+  </div>
+</footer>
+</body>
+
+</html>

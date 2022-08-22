@@ -1,0 +1,91 @@
+
+footer {
+  background-color: #eee;
+  padding: 0px;
+}
+
+
+/* 푸터메뉴 */
+.footer-gnb {
+  font-size: 11px;
+  padding: 11px 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.footer-gnb li {
+  display: inline-block;
+}
+
+.footer-gnb a {
+  color: #333;
+  padding: 5px 10px;
+}
+
+.footer-gnb .footer-nav::after {
+  content: "|";
+  color: #333;
+}
+
+.footer-gnb .footer-nav:last-child::after {
+  content: "";
+}
+
+
+/* sns */
+.sns {
+  padding: 10px 20px; 
+  display: flex;
+  justify-content: center;
+}
+
+.sns .bi:first-child{
+  margin-right: 7vw;
+}
+.sns .bi {
+    font-size: 23px;
+    color: #333;
+}
+
+/* info */
+.info{
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  padding: 5px 20px;
+}
+
+/* article */
+
+.info article{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.info article h2{
+  font-size: 15px;
+}
+.info article p{
+  font-size: 13px;
+  text-align: left;
+}
+.info .contents form{
+  margin-top: 10px;
+  font-size: 15px;
+  /* 테두리가 안보여 크게 조절함 */
+}
+.info article p span{
+  font-weight: 700;
+}
+.info .cs{
+  display: flex;
+  justify-content: center;
+}
+.info .cs h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
