@@ -13,6 +13,13 @@ html{
     scroll-behavior: smooth;
     background: #333;
 }
+body{
+  -ms-overflow-style: none;
+  }
+  
+ ::-webkit-scrollbar {
+   display: none;
+ }
 /* max-width 설정 */
 body{
   max-width: 500px;

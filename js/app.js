@@ -118,6 +118,9 @@ $(function(){
     $(this).siblings().removeClass('on');
     $(this).addClass('on');
   });
+  $('ul.sub-menu li.boboga').click(function(){
+    $(this).removeClass('on');
+  });
 });
 
 
@@ -129,7 +132,7 @@ $(function(){
   });
   
   $('#h-all').click(function(){
-    $('.item article').not('.wlh, .wh').fadeOut(100);
+    $('.item article').not('.wlh, .wh').fadeOut(1);
     $('.wlh, .wh').show();
   });
   $('#wlh').click(function(){

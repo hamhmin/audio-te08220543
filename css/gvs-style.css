@@ -1,19 +1,27 @@
 #products main  section.banner{
   margin-top: 53px;
 }
+#products img{
+  max-width: 500px;
+}
+#products main{
+  width: 100vw;
+  max-width: 500px;
+}
 #products main .banner{
   width: 100vw;
+  max-width: 500px;
   height: 106.25px;
 }
 #products main .banner img{
   display: block;
   width: 100vw;
+  max-width: 500px;
   object-fit: contain;
 }
 
 #products main .category{
   margin-top: 20px;
-  outline: 2px solid red;
   padding: 5px 20px;
   height: 150px;
   position: relative;
@@ -23,11 +31,11 @@
   justify-content: space-between;
   align-items: center;
 }
-#products .category .main-menu .sub-menu{
-
-}
 #products .category .main-menu > li{
   position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 3px;
 }
 #products .category .main-menu li ul.sub-menu{
   width: max-content;
@@ -47,6 +55,7 @@
   border-radius: 4px;
   background: #333;
   color: #fff;
+  font-weight: 300;
 }
 #products .category .main-menu ul.sub-menu li{
   display: inline-block;
@@ -55,6 +64,8 @@
   padding: 2px 8px;
   margin-right:15px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
 }
 #products .category .main-menu ul.sub-menu li:last-child{
   margin-right: 0;
@@ -74,7 +85,16 @@
   height: 30px;
   display: none;
 }
-
+#products main .item{
+  width: 100%;
+  max-width: 500px;
+}
+#products main .item a{
+  width: 50%;
+  max-width: 250px;
+  display: block;
+  margin: 20px 0;
+}
 #products main .row-item{
   display: flex;
   flex-direction: row;
@@ -85,13 +105,15 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 50vw;
+  width: calc(50%);
   padding: 0 20px;
   margin-bottom: 20px;
+  max-width: 250px;
 }
 #products main .row-item article img{
-  min-width: 156px;
-  width: calc(50vw - 40px);
+  min-width: 198px;
+  width: 100%;
+  object-fit: cover;
 }
 #products main .row-item article h3{
   font-size: 16px;
@@ -118,6 +140,11 @@ margin-bottom: 20px;
 #products main .col-item article{
   display: flex;
   border-bottom: 1px solid #aaa;
+}
+#products main .col-item article img{
+  width: 100%;
+  min-width: 70px;
+  object-fit: cover;
 }
 #products main .col-item article .item-text{
   display: flex;
