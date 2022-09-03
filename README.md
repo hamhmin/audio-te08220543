@@ -57,4 +57,5 @@
 
 
 ## 사용 라이브러리
-|JavaScript|bootstrap|
+1.JavaScript
+2.bootstrap
