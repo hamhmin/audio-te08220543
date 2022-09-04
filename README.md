@@ -6,7 +6,7 @@
 
 오디오 테크니카 모바일웹을 제작했습니다.
 
-사이트 링크 : https://hamhmin.github.io/audio-technica/
+사이트 링크 : https://hamhmin.github.io/audio-te08220543/
 
 -----------------
 
